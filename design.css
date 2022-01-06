@@ -1,0 +1,57 @@
+body { 
+    background-color: lightblue; /* Background color of the page */
+
+    background-image: url("/assets/Route_1.png"); /*Set the background image for a page , it also can be used for elements */
+
+    background-repeat: repeat-x; /* Repeat the image on the background horizontally */
+
+    background-repeat: repeat-y; /* Repeat the image on the background vertically */
+
+    background-repeat: no-repeat; /* Dont Repeat the image on the background */
+
+    background-position: right top; /* Specify position of the image on the background */
+
+    /* The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page) */
+    background-attachment: fixed; 
+    background-attachment: scroll;
+
+    /* Use the shorthand property to set the background properties in one declaration */    
+    background: lightblue url("/assets/Route_1.png") no-repeat fixed right top;
+
+}
+
+
+#Titulo{ /* Background color but giving a opacity command*/
+    background-color: green;
+     opacity: 0.3;  /*When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read. */
+} 
+
+#Subtitulo {
+    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity , If you do not want to apply opacity to child elements */
+}
+
+
+#Piano {
+    display: block;
+    position: absolute;
+    z-index: 11;
+}
+
+#Bongos {
+    position: absolute;
+    z-index: 10;
+}
+
+.button:active + #Piano{
+    /* display: none; */
+    z-index: 9;
+}
+
+.button1:active + #Bongos{
+    display: none;
+}
+
+/* .button:active + #Bongos{
+    display: block;
+    z-index: 10;
+} */

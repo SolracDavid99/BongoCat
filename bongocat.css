@@ -1,0 +1,146 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+#lineaNegra{
+    position: fixed;
+    display: block;
+    width: 2500px; height: 7px;
+    left: -200px; top: 480px;
+    -webkit-transform:rotate(194deg);
+    -moz-transform: rotate(194deg);
+    -ms-transform: rotate(194deg);
+    -o-transform: rotate(194deg);
+    transform: rotate(194deg);
+    z-index: 2;
+}
+
+#Gato {
+    position: fixed;
+    left: 20%; top: 20%;
+    z-index: 10;
+}
+
+#PataDerecha {
+    position: absolute;
+    display: block;
+    left: 350px; top: 212px;
+    z-index: 2;
+}
+
+#PataDerechaTocando {
+    position: absolute;
+    left: 340px; top: 222.2px;
+}  
+
+#whiteSquare {
+    position: fixed;
+    display: block;
+    left: 300px; top: 222.2px;
+    z-index: 1;
+    /* border: solid black 5px; */
+}   
+
+
+#PataIzquierda {
+    position: fixed;
+    left: 550px; top: 280px;
+    z-index: 1;
+}
+
+#PataIzquierdaTocando {
+    position: fixed;
+    left: 510px; top: 335px;
+    z-index: -1;
+}
+
+#Boca{
+    position: fixed;
+    left: 468px; top: 295px;
+}
+
+#Meow{
+    position: fixed;
+    left: 478px; top: 295px;
+}
+
+#Bongos{
+    position: fixed;
+    left: 0px; top: 177px;
+    z-index: 2;
+}
+
+#Platillo{
+    position: fixed;
+    left: 0px; top: 177px;
+}
+
+#Cowbell{
+    position: fixed;
+    left: 0px; top: 177px;
+}
+
+#Piano{
+    position: fixed; 
+    left: 0px; top: 177px;
+}
+
+#Marimba{
+    position: fixed;
+    left: 0px; top: 177px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #658cc7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+a {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #658cc7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3b23c5}
+
+.button:active{
+    background-color: #131ca0;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    display: block;
+}
+
+.button:active + #Bongo1{
+    display: block;
+}
+
+#Bongo1 {
+    display: none;
+}
+
+.button:active + #Bongo2{
+    display: block;
+}
+
+#Bongo2 {
+    display: none;
+}
